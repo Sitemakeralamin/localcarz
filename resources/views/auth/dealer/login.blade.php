@@ -5,7 +5,7 @@
 
 
     <meta charset="utf-8" />
-            <title>Localcarz Admin| Login</title>
+            <title>Localcarz Dealer| Login</title>
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
             <meta content="" name="author" />
@@ -24,6 +24,12 @@
 </head>
 
 <body id="body" class="auth-page" style="background-image: url({{url('dashboard/images/p-1.png')}}); background-size: cover; background-position: center center;">
+
+    @if(session()->has('message'))
+                <div class="alert alert-success">
+                    {{ session()->get('message') }}
+                </div>
+            @endif
    <!-- Log In page -->
     <div class="container-md">
         <div class="row vh-100 d-flex justify-content-center">
@@ -42,7 +48,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body pt-0">
-                                    <form method="post" action="{{ route('login') }}">
+                                    <form method="post" action="{{ route('dealer.login') }}">
                                         @csrf
                                         <div class="form-group mb-2">
                                             <label class="form-label" for="email">Email</label>
@@ -63,7 +69,7 @@
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
-                            @enderror
+                                 @enderror
                                         </div><!--end form-group-->
 
                                         <div class="form-group row mt-3">

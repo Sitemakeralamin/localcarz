@@ -56,7 +56,8 @@
                     <a href="#" class="logo">
                         <h4>
                             {{ Auth::user()->name }}
-
+                            <!-- <img src="{{asset('/dashboard')}}/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark">
+                            <img src="{{asset('/dashboard')}}/images/logo.png" alt="logo-large" class="logo-lg logo-light"> -->
                         </h4>
                     </a><!--end logo-->
                 </div><!--end topbar-left-->
