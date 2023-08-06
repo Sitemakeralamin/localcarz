@@ -48,16 +48,22 @@ class DealerController extends Controller
             'password' => 'required',
        ]);
 
+
        if(Auth::attempt(['email'=>$request->email,'password'=>$request->password]))
        {
+
         return redirect()->route('dealer.dashboard');
+
+       }else
+       {
+        return "creadential do not match!";
        }
 
     }
 
     public function dashboard()
     {
-        return view('dealer.home');
+        return view('dealer.dealer_home');
     }
 
 

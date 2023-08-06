@@ -28,7 +28,7 @@
             <div class="main-icon-menu">
                 <a href="#" class="logo logo-metrica d-block text-center">
                     <span>
-                        <img src="{{asset('/dashboard')}}/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                        <img src="{{asset('/dashboard')}}/images/localcarz.png" height="50" width="80%" alt="logo" class="auth-logo">
                     </span>
                 </a>
                 <div class="main-icon-menu-body">
@@ -70,7 +70,15 @@
 
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Analytics</a>
+                                <a class="nav-link" href="#">All User</a>
+                            </li><!--end nav-item-->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">All Dealer</a>
+                            </li><!--end nav-item-->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Indivisual Client</a>
                             </li><!--end nav-item-->
 
                         </ul><!--end nav-->

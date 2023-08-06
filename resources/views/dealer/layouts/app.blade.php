@@ -28,7 +28,7 @@
             <div class="main-icon-menu">
                 <a href="#" class="logo logo-metrica d-block text-center">
                     <span>
-                        <img src="{{asset('/dashboard')}}/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                        <img src="{{asset('/dashboard')}}/images/localcarz.png" height="50" width="80%" alt="logo" class="auth-logo">
                     </span>
                 </a>
                 <div class="main-icon-menu-body">
@@ -56,8 +56,7 @@
                     <a href="#" class="logo">
                         <h4>
                             {{ Auth::user()->name }}
-                            <!-- <img src="{{asset('/dashboard')}}/images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark">
-                            <img src="{{asset('/dashboard')}}/images/logo.png" alt="logo-large" class="logo-lg logo-light"> -->
+
                         </h4>
                     </a><!--end logo-->
                 </div><!--end topbar-left-->
@@ -71,8 +70,60 @@
 
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Analytics</a>
+                                <a class="nav-link" href="#">Video Test Drives</a>
                             </li><!--end nav-item-->
+
+                            <li class="nav-item">
+
+                                <a class="nav-link" href="#">Badges</a>
+                            </li><!--end nav-item-->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#inventory" data-bs-toggle="collapse" role="button"
+                                aria-expanded="false" aria-controls="inventory">
+                                Inventory
+                            </a>
+                            <div class="collapse " id="inventory">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="crm-contacts.html">Existing Inventory</a>
+                                    </li><!--end nav-item-->
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="crm-opportunities.html">Sold Inventory</a>
+                                    </li><!--end nav-item-->
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="crm-leads.html">Inventory Analysis</a>
+                                    </li><!--end nav-item-->
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="crm-customers.html">Inventory Exports</a>
+                                    </li><!--end nav-item-->
+                                </ul><!--end nav-->
+                            </div><!--end sidebarCRM-->
+                            </li><!--end nav-item-->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Leads & Contacts</a>
+                            </li><!--end nav-item-->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Social Media</a>
+                            </li><!--end nav-item-->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tools</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reports</a>
+                            </li><!--end nav-item-->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Website</a>
+                            </li><!--end nav-item-->
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Settings</a>
+                            </li><!--end nav-item-->
+
 
                         </ul><!--end nav-->
                     </div><!-- end Dashboards -->
@@ -85,7 +136,7 @@
 
         <!-- Top Bar Start -->
         <!-- Top Bar Start -->
-        @include('layouts.topbar')
+        @include('dealer.layouts.topbar')
         <!-- Top Bar End -->
         <!-- Top Bar End -->
 
