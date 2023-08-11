@@ -281,24 +281,58 @@
                                         </tr>
                                     </thead>
                                     <tbody style="border-left: 1px solid red">
-                                        <?php
-                                            for ($i=1; $i < 10 ; $i++) {
-                                               ?>
+
                                         <tr class="text-center">
                                             <td><input type="radio"></td>
                                             <td><button type="button" class="btn btn-info shadow" data-toggle="modal"
                                                     data-target="#exampleModal">View / Reply</button></td>
-                                            <td>2005/02/11</td>
+                                            <td>2023/02/11</td>
                                             <td>2018 Nissan Maxima SV</td>
-                                            <td>Alex</td>
+                                            <td>Adrian Mccormick</td>
                                             <td>Vehicle Inquiry</td>
                                             <td><i class="fa fa-close"></i></td>
                                         </tr>
 
-                                        <?php
-                                            }
-                                            ?>
-
+                                        <tr class="text-center">
+                                            <td><input type="radio"></td>
+                                            <td><button type="button" class="btn btn-info shadow" data-toggle="modal"
+                                                    data-target="#exampleModal">View / Reply</button></td>
+                                            <td>2023/02/16</td>
+                                            <td>2015 Mercedes-Benz C-class</td>
+                                            <td>James McKnight</td>
+                                            <td>Vehicle Inquiry</td>
+                                            <td><i class="fa fa-close"></i></td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td><input type="radio"></td>
+                                            <td><button type="button" class="btn btn-info shadow" data-toggle="modal"
+                                                    data-target="#exampleModal">View / Reply</button></td>
+                                            <td>2023/06/6</td>
+                                            <td>2017 Chevrolet Silverado 1500</td>
+                                            <td>Michael Heatherly</td>
+                                            <td>Loan Application</td>
+                                            <td><i class="fa fa-close"></i></td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td><input type="radio"></td>
+                                            <td><button type="button" class="btn btn-info shadow" data-toggle="modal"
+                                                    data-target="#exampleModal">View / Reply</button></td>
+                                            <td>2023/06/6</td>
+                                            <td>2018 Mazda MAZDA3 Sport</td>
+                                            <td>Stonehands 024</td>
+                                            <td>Vehicle History Report</td>
+                                            <td><i class="fa fa-close"></i></td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td><input type="radio"></td>
+                                            <td><button type="button" class="btn btn-info shadow" data-toggle="modal"
+                                                    data-target="#exampleModal">View / Reply</button></td>
+                                            <td>2023/05/11</td>
+                                            <td>2012 Lexux RX 350 Base 4dr SUV</td>
+                                            <td>Heather Ramage</td>
+                                            <td>Vehicle History Report</td>
+                                            <td><i class="fa fa-close"></i></td>
+                                        </tr>
                                     </tbody>
                                 </table>
 
@@ -355,13 +389,13 @@
                                 <div class="col-md-6">
                                     <div class="card shadow h-100">
                                         <div class="card-header" style="background-color: #d9dcdf">
-                                            <i class="fa fa-user"></i> | <span>Contact: Alex</span>
+                                            <i class="fa fa-user"></i> | <span>Contact: Adrian Mccormick</span>
                                         </div>
                                         <div class="card-body ">
                                             <p class="my-0 "><b>Phone:</b> (601) 724-8697</p>
                                             <p class="my-0 "><b>Address:</b> Not Provided</p>
                                             <p class="my-0 "><b>Salesperson:</b> Unassigned</p>
-                                            <p class="my-0 "><b>Email:</b> alex@gmail.com</p>
+                                            <p class="my-0 "><b>Email:</b> Adrian Mccormick@gmail.com</p>
 
                                             <button type="button" class="btn btn-sm btn-primary mt-5"
                                                 style="align-items: center">View Contact</button>
@@ -382,7 +416,7 @@
                                                 <div class="wrapper-message">
                                                     <div class="row">
                                                         <div class="col-md-3 p-4">
-                                                            <p class="p-0 m-0">Alex </p>
+                                                            <p class="p-0 m-0">Adrian Mccormick </p>
                                                             <p class="p-0 m-0">7/11/23 7:21 AM</p>
                                                         </div>
                                                         <div class="col-md-9 p-4">
@@ -395,16 +429,16 @@
 
                                                 <div class="row message_body">
                                                     <div class="col-md-9">
-                                                        <p class="mt-4">Send a message to Alex</p>
+                                                        <p class="mt-4">Send a message to Adrian Mccormick</p>
                                                         <textarea name="message" style="width:100%; height:159px" placeholder="Type your Response and click send"></textarea>
                                                     </div>
                                                     <div class="col-md-3">
                                                        <div class="row mb-3">
                                                       <p class="mt-4">Attach</p>
-                                                       <input type="file" name="file" style="display: none"><button style="border: none;padding:5px; text-align:left; font-size: 14px;
+                                                       <input type="file" name="file" id="FileUpload1" style="display: none"><button style="border: none;padding:5px; text-align:left; font-size: 14px;
                                                        background: #fff;
                                                        width: 92%;
-                                                       padding: 14px;"> <i class="fa-solid fa-paperclip"></i> File</button>
+                                                       padding: 14px;" id="btnFileUpload"> <i class="fa-solid fa-paperclip"></i> File</button>
                                                        </div>
                                                        <div class="row mb-3">
                                                         <input type="file" name="file" style="display: none"><button style="border: none;padding:5px; text-align:left;    font-size: 14px;
