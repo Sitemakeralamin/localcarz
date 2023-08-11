@@ -19,7 +19,10 @@
          <link href="{{asset('/dashboard')}}/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
          <link href="{{asset('/dashboard')}}/css/icons.min.css" rel="stylesheet" type="text/css" />
          <link href="{{asset('/dashboard')}}/css/app.min.css" rel="stylesheet" type="text/css" />
-
+<!-- Option 1: Include in HTML -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        @stack('styles')
     </head>
 
     <body id="body">
@@ -102,7 +105,7 @@
                             </li><!--end nav-item-->
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Leads & Contacts</a>
+                                <a class="nav-link" href="{{ route('dealer.lead') }}">Leads & Contacts</a>
                             </li><!--end nav-item-->
 
                             <li class="nav-item">
@@ -159,7 +162,13 @@
         <script src="{{asset('/dashboard')}}/js/pages/analytics-index.init.js"></script>
         <!-- App js -->
         <script src="{{asset('/dashboard')}}/js/app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script src="{{asset('/dashboard')}}/libs/simple-datatables/umd/simple-datatables.js"></script>
+    <script src="{{asset('/dashboard')}}/js/pages/datatable.init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
     <!--end body-->
 </html>
